@@ -137,6 +137,7 @@ ul
     margin-right: 20px;
     margin-left: 20px;
     display: flex;
+    
 
 }
 .product-story > ul
@@ -401,10 +402,6 @@ ul
     .banner-product
     {
        display: none;
-    }
-    .trend-product-img
-    {
-        width: 70%;
     }
 .product-story > ul > li  
 {
