@@ -96,7 +96,7 @@ ul
     font-size: 18px;
 
 }
-.basket
+/*.basket
 {
     z-index: 2;
     width: 400px;
@@ -107,7 +107,8 @@ ul
     right: 0;
     top: 100%;
     display: none;
-}
+}*/
+
 .basket-count
 {
     width: 25px;
@@ -399,6 +400,10 @@ ul
 
 
 @media screen and (min-width:300px) and (max-width:768px) {
+    .trend-product-img
+    {
+        width: 100%;
+    }
     .banner-product
     {
        display: none;
