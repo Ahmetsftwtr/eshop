@@ -192,6 +192,7 @@ ul
 {
     position: relative;
 
+
 }
 .trend-product-center
 {
@@ -224,7 +225,6 @@ ul
 {
     height: 500px;
     width: 170px;
-    border-radius: 30px;
     padding-right: 15px;
     object-fit: cover;
     
@@ -444,7 +444,7 @@ ul
 @media screen and (min-width:768px) and (max-width:1024px) {
         .trend-product-img
     {
-        width: 70%;
+        width: 80%;
     }
     .search
     {
