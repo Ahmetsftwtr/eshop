@@ -1,0 +1,86 @@
+<html>
+
+<head>
+<title>ESHOP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/slider.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+<!-- HEADER MENU  -->
+<header>
+
+<div class="navbar">
+
+<ul>
+ 
+<li> 
+<div class="navbar-left">
+    <a href="index.html" style="text-decoration: none;color:black;"><span style="font-size: 24px;padding-right: 10px;">ESHOP</span></a>
+    <span> <i class="fal fa-bars navbar-icon"></i></span>
+</div>
+
+</li>
+<li>
+<div class="search">
+    <i class="fal fa-search"></i>
+    <input type="text" placeholder="Ürün ara">
+</div>
+</li>
+
+<li>
+    <div class="navbar-right">
+       <span> Giriş yap</span> <i class="fal fa-user navbar-icon"></i>
+     <a href="Basket.html" style="text-decoration: none;color:black;"> <span> Sepetim </span><i class="fal fa-shopping-cart navbar-icon"></i> <div class="basket-count"id="basketcount"></div></a>
+       <!-- <div class="basket"></div> -->
+    </div>
+</li>
+
+</ul>    
+
+
+</div>
+
+</header>
+<!-- HEADER MENU END  -->
+
+
+<!-- SEPET MAİN  -->
+
+<div class="sepet-main" id="sepet">
+
+    <p   id="noitem">Sepetinizde ürün bulunmamaktadır.</p>
+
+<table id="sepetbody">
+
+</table>
+
+<div class="sepet-ozet">
+    <p class="text-1">Sipariş özeti</p>
+<p class="text-1">Ara tutar <span style="float:right;">1000 TL</span></p>
+<hr style="border-style:dashed;border-color:#f39c12;">
+<p class="text-1">Toplam <span style="float:right;">1000 TL</span></p>
+<p style="text-align: center;"><button type="button" onclick="Usercontrol()" class="sepetbutton">Sepeti onayla</button></p>
+ 
+</div>
+
+
+
+
+
+</div>
+
+
+<!-- SEPET MAİN END  -->
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
