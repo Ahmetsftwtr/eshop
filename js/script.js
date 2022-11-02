@@ -59,9 +59,8 @@ function FetchData()
         </div>
         </div>`;
      }
-     div2.innerHTML = write2;
      div.innerHTML = write;
-     
+     div2.innerHTML = write2;     
     })
 }
 

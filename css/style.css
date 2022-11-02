@@ -144,7 +144,7 @@ ul {
     list-style-type: none;
     flex-wrap: wrap;
     justify-content: center;
-
+    gap: 30px;
 
 }
 
@@ -187,8 +187,6 @@ ul {
 .trend-product-item {
     position: relative;
 
-
-
 }
 
 #trend-product-center {
@@ -229,6 +227,8 @@ ul {
     width: 170px;
     padding-right: 15px;
     object-fit: cover;
+    border-radius: 40px;
+
 
 }
 
@@ -243,9 +243,6 @@ ul {
     width: 100%;
     display: flex;
     position: relative;
-    margin-right: 0;
-    margin-left: 20px;
-    margin-right: 20px;
     align-items: center;
     justify-content: center;
 
@@ -314,6 +311,7 @@ ul {
 
 .new-product-item>p:nth-child(2) {
     font-weight: 700;
+
 }
 
 .new-product-item>p:nth-child(3) {
@@ -503,8 +501,8 @@ input[type=number] {
 
     .trendactive {
         animation-name: trendactive;
-        animation-duration: 2s;
-        animation-fill-mode: backwards;
+        animation-duration: 3s;
+        animation-fill-mode:none;
 
     }
 
@@ -512,14 +510,25 @@ input[type=number] {
         width: 100%;
     }
 
+    .product-story
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .product-story>ul {
+        justify-content:left;
+    }
     .product-story>ul>li {
         width: 60px;
         height: 60px;
+        margin: 10;
     }
 
     .product-story>ul>li>img {
         width: 57px;
         height: 57px;
+
 
     }
 
@@ -533,7 +542,7 @@ input[type=number] {
         width: 100%;
     }
 
-    .navbar-right>span {
+    .navbar-right-text {
         display: none;
     }
 
@@ -545,12 +554,6 @@ input[type=number] {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
     }
-
-    .banner-product {
-        padding-right: 50px;
-
-    }
-
     .banner-product-col-1 img {
         object-fit: cover;
 
