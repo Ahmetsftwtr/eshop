@@ -23,7 +23,7 @@ function FetchData()
     var div2 = document.getElementById("swiper-list")
     let write = "";
     let write2 = "";
-    fetch("../Data.json")
+    fetch("Data.json")
     .then((response) => response.json())
     .then((Data) => {
       for(var item of Data.products)
