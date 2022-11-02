@@ -29,6 +29,7 @@
     max-height: 100% !important;
     height: 100% !important;
     display: flex !important; 
+
   }
   .swiper-pagination {
     bottom: 0% !important;
@@ -36,7 +37,8 @@
 .swiper-pagination-bullet
 {
   border-radius: 0 !important;
-  width: 30px !important;
+  width: 20px !important;
+  margin-bottom: 10px !important;
 }
 .swiper-pagination-bullet-active {
   background-color: #f39c12 !important;
@@ -70,4 +72,13 @@
     color:#f39c12 !important;
     font-size: 28px;
     border-radius: 20px;
+  }
+  @media screen and (min-width:400px)  
+  {
+  
+    .swiper-slide > .new-product-item
+    {
+      margin-bottom: 0px;
+    }
+    
   }

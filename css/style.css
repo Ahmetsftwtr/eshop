@@ -301,7 +301,6 @@ ul {
     padding-bottom: 10px;
     border: 1px solid whitesmoke;
     font-family: 'Source Sans Pro', sans-serif;
-
 }
 
 .new-product-item>img {
@@ -540,6 +539,7 @@ input[type=number] {
 
     .search>input {
         width: 100%;
+        height: 45px;
     }
 
     .navbar-right-text {
