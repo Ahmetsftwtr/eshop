@@ -288,7 +288,6 @@ ul {
 
     margin: 0 auto;
     display: grid;
-    max-width: 100%;
 
 }
 
@@ -344,6 +343,7 @@ ul {
     border: 1px solid #f39c12;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 19px;
+    cursor: pointer;
 
 }
 
@@ -394,7 +394,7 @@ ul {
 }
 
 .product-slider {
-    width: 100%;
+    max-width: 100%;
     padding-left: 30px;
     padding-right: 30px;
     margin-right: auto;
@@ -480,6 +480,113 @@ input[type=number] {
 
 }
 
+#popup {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #f39c12;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 0%;
+    top: 0;
+    font-size: 20px;
+  }
+  
+  #popup.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+  }
+
+
+.login
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-main
+{
+    width: 450px;
+    height: 450px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    padding:10;
+    border-radius: 20px;
+    
+}
+.login-main > p
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+}
+.login-main > input[type=text]
+{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    border:none;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.login-main > input[type=text]:focus
+{
+    outline: none;
+    border:1px solid #f39c12;
+    background-color: white;
+}
+.login-main > input[type=text]::placeholder
+{
+    text-align: center;
+    font-size: 18px;
+}
+.login-main > button
+{
+    width: 70%;
+    height: 40px;
+    background-color: transparent;
+    color:black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    border:1px solid #f39c12;
+    margin-bottom: 0px;
+}
+.login-main > button:hover
+{
+    background-color: #f39c12;
+    color:white;
+}
 
 @media screen and (min-width:300px) and (max-width:768px) {
     .sepet-main {

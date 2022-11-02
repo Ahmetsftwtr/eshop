@@ -1,10 +1,4 @@
-$(document).ready(function() 
-{
-    FetchData();
-})
-
-
-    const x = document.querySelectorAll(".trendproductimg");
+  const x = document.querySelectorAll(".trendproductimg");
     x.forEach((trendproductimg) =>{
 
      trendproductimg.addEventListener("click",()=>{
@@ -67,11 +61,27 @@ function FetchData()
 
 cart = [];  
  $(function () {
+
+    FetchData();
+
     if (localStorage.cart)
     {
+
+
         cart = JSON.parse(localStorage.cart);  
         showCart(); 
+
     }
+
+    var totalprice =document.getElementById("totalprice")
+    var total = 0;
+    for(var p of cart)
+    {
+       total += parseInt(p.Price);       
+       
+    }
+    totalprice.textContent = total;
+
     
 });
 
@@ -99,6 +109,7 @@ function AddBasket(Id,price,name,qty,img) {
     cart.push(item);
     saveCart();
     showCart();
+    BasketPopup();
 }
 function saveCart() {
     if (window.localStorage)
@@ -165,4 +176,25 @@ function Usercontrol()
         alert('Lütfen giriş yapınız')
     }
 }
+function BasketPopup() {
+    var x = document.getElementById("popup");
+    x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
 
+/*function ShowSepet()
+{
+    var x1 = document.getElementById("x1");
+    var x2 = document.getElementById("x2");
+    var x3 = document.getElementById("x3");
+    var x4 = document.getElementById("x4");
+    var x5 = document.getElementById("x5");
+    var sepet = document.getElementById("sepet");
+
+    x1.style.display = "none"
+    x2.style.display = "none"
+    x3.style.display = "none"
+    x4.style.display = "none"
+    x5.style.display = "none"
+    sepet.style.display = "block";
+}*/

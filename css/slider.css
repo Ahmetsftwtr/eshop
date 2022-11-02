@@ -23,6 +23,7 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    max-width: 100%;
   }
   .swiper-wrapper
   {
