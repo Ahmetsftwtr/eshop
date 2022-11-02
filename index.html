@@ -8,11 +8,11 @@
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
 <link href="css/style.css" rel="stylesheet">
 <link href="css/slider.css" rel="stylesheet">
-
 <link
 rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 />
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 
 
@@ -41,8 +41,8 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 <li>
     <div class="navbar-right">
        <span> Giriş yap</span> <i class="fal fa-user navbar-icon"></i>
-      <span> Sepetim </span><i class="fal fa-shopping-cart navbar-icon"></i> <div class="basket-count">1</div>
-       <div class="basket"></div>
+     <a href="Sepet.html" style="text-decoration: none;color:black;"> <span> Sepetim </span><i class="fal fa-shopping-cart navbar-icon"></i> <div class="basket-count"id="basketcount"></div></a>
+       <!-- <div class="basket"></div> -->
     </div>
 </li>
 
@@ -61,9 +61,12 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 <ul>
     <li><img src="https://productimages.hepsiburada.net/s/268/300-443/110000253568492.jpg"> Erkek</li>
     <li><img src="https://dfcdn.defacto.com.tr/7/U4653AZ_21HS_AR126_01_01.jpg"> Bayan</li>
+    <li><img src="https://dfcdn.defacto.com.tr/responsive/navigasyon/cocuk/kiz/ozelkoleksiyon/agustos/basic.jpg"> Çocuk</li>
+
     <li><img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4e7695a1-3a51-4c22-98e3-3bad6274cee1/air-jordan-1-retro-high-og-ayakkab%C4%B1.png"> Ayakabı</li>
     <li><img src="https://www.edipsaat.com/296972-home_default/citizen-nj0150-81e.jpg"> Saat</li>
     <li><img src="https://n11scdn.akamaized.net/a1/226_339/giyim-ayakkabi/omuz-cantasi/just-polo-kilit-detayli-kadin-cuzdan-ve-omuz-canta-kombini__0679786542313146.jpg"> Çanta</li>
+    <li><img src="https://konyali.mncdn.com/mnresize/375/375/konyalisaat/uploads/product-category/314x314_gozluk_erkek_mobil.jpg"> Gözlük</li>
 
 </ul>    
 
@@ -79,44 +82,44 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 <p class="trend-head">Trend Ürünler</p>
 
 <div class="trend-product-list">
-<div class="trend-product-item">  
-<img class="trend-product-img" src="https://blog.newobsessions.com/wp-content/uploads/2020/02/erkek-moda-3-1200x1200.jpg">
-<div class="trend-product-center">
+<div class="trend-product-item"  tabindex="1">  
+<img class="trendproductimg" src="https://blog.newobsessions.com/wp-content/uploads/2020/02/erkek-moda-3-1200x1200.jpg">
+<div id="trend-product-center">
 <p>Erkek Trend</p>
 <button type="button">Göz at <i class="fal fa-chevron-double-right"></i></button>
 </div>
 </div>
-<div class="trend-product-item">  
-<img  class="trend-product-img" src="https://blog.newobsessions.com/wp-content/uploads/2020/02/erkek-moda-4-826x1024.jpg">
-<div class="trend-product-center">
+<div class="trend-product-item"  tabindex="0">  
+<img  class="trendproductimg" src="https://blog.newobsessions.com/wp-content/uploads/2020/02/erkek-moda-4-826x1024.jpg">
+<div id="trend-product-center">
     <p>Erkek Trend</p>
     <button type="button">Göz at <i class="fal fa-chevron-double-right"></i></button>
 </div>
 </div>
-<div class="trend-product-item">  
-<img class="trend-product-img"  src="http://www.enmodanevar.com/wp-content/uploads/2017/01/Erkek-Giyim-Stil-Onerileri.jpg">
-<div class="trend-product-center">
+<div class="trend-product-item"  tabindex="0">  
+<img class="trendproductimg"  src="http://www.enmodanevar.com/wp-content/uploads/2017/01/Erkek-Giyim-Stil-Onerileri.jpg">
+<div id="trend-product-center">
     <p>Erkek Trend</p>
     <button type="button">Göz at <i class="fal fa-chevron-double-right"></i></button>
 </div>
 </div>
-<div class="trend-product-item">  
-<img class="trend-product-img"  src="https://www.trendlervemoda.com/wp-content/uploads/2018/10/sonbahar-kis-2018-2019-bayan-giyim.jpg">
-<div class="trend-product-center">
+<div class="trend-product-item"  tabindex="0">  
+<img class="trendproductimg"   src="https://www.trendlervemoda.com/wp-content/uploads/2018/10/sonbahar-kis-2018-2019-bayan-giyim.jpg">
+<div id="trend-product-center">
     <p>Kadın Trend</p>
     <button type="button">Göz at <i class="fal fa-chevron-double-right"></i></button>
 </div>
 </div>
-<div class="trend-product-item">  
-<img class="trend-product-img"  src="https://file-penti.mncdn.com/mnresize/550/825/pentiimages/PH3ARB8822SK-ST1_front.jpg">
-<div class="trend-product-center">
+<div class="trend-product-item" tabindex="0">  
+<img class="trendproductimg"  src="https://file-penti.mncdn.com/mnresize/550/825/pentiimages/PH3ARB8822SK-ST1_front.jpg">
+<div id="trend-product-center">
     <p>Kadın Trend</p>
     <button type="button">Göz at <i class="fal fa-chevron-double-right"></i></button>
 </div>
 </div>
-<div class="trend-product-item">  
-<img class="trend-product-img"  src="https://cdn.lela.com.tr/lela-pamuklu-cepli-balon-kol-boyfriend-bayan-gomlek-6230458-mavi-241282-80-O.jpg">
-<div class="trend-product-center">
+<div class="trend-product-item"  tabindex="0">  
+<img class="trendproductimg"  src="https://cdn.lela.com.tr/lela-pamuklu-cepli-balon-kol-boyfriend-bayan-gomlek-6230458-mavi-241282-80-O.jpg">
+<div id="trend-product-center">
     <p>Kadın Trend</p>
     <button type="button">Göz at <i class="fal fa-chevron-double-right"></i></button>
 </div>
@@ -155,104 +158,7 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 
 <p class="trend-head">Yeni Ürünler</p>
 
-<div class="new-product-list">
-
-<div class="new-product-item">
-  <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-  <p>Kigili Siyah Erkek Ceket</p>
-  <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-  <p>922 TL</p>
-<div class="new-product-item-bottom">
-<button type="button" class="add-basket">Sepete ekle</button>
-<button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-
-</div>
-
-</div>   
-<div class="new-product-item">
-    <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-    <p>Kigili Siyah Erkek Ceket</p>
-    <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-    <p>922 TL</p>
-  <div class="new-product-item-bottom">
-  <button type="button" class="add-basket">Sepete ekle</button>
-  <button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-  
-  </div>
-  
-  </div>   
-  <div class="new-product-item">
-    <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-    <p>Kigili Siyah Erkek Ceket</p>
-    <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-    <p>922 TL</p>
-  <div class="new-product-item-bottom">
-  <button type="button" class="add-basket">Sepete ekle</button>
-  <button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-  
-  </div>
-  
-  </div>   
-  <div class="new-product-item">
-    <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-    <p>Kigili Siyah Erkek Ceket</p>
-    <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-    <p>922 TL</p>
-  <div class="new-product-item-bottom">
-  <button type="button" class="add-basket">Sepete ekle</button>
-  <button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-  
-  </div>
-  
-  </div>   
-  <div class="new-product-item">
-    <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-    <p>Kigili Siyah Erkek Ceket</p>
-    <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-    <p>922 TL</p>
-  <div class="new-product-item-bottom">
-  <button type="button" class="add-basket">Sepete ekle</button>
-  <button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-  
-  </div>
-  
-  </div>   
-  <div class="new-product-item">
-    <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-    <p>Kigili Siyah Erkek Ceket</p>
-    <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-    <p>922 TL</p>
-  <div class="new-product-item-bottom">
-  <button type="button" class="add-basket">Sepete ekle</button>
-  <button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-  
-  </div>
-  
-  </div>   
-  <div class="new-product-item">
-    <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-    <p>Kigili Siyah Erkek Ceket</p>
-    <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-    <p>922 TL</p>
-  <div class="new-product-item-bottom">
-  <button type="button" class="add-basket">Sepete ekle</button>
-  <button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-  
-  </div>
-  
-  </div>   
-  <div class="new-product-item">
-    <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-    <p>Kigili Siyah Erkek Ceket</p>
-    <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-    <p>922 TL</p>
-  <div class="new-product-item-bottom">
-  <button type="button" class="add-basket">Sepete ekle</button>
-  <button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-  
-  </div>
-  
-  </div>            
+<div class="new-product-list" id="productlist">        
 
 </div>
 </div>
@@ -267,94 +173,7 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     <p class="trend-head">En Çok Satanlar</p>
     <!-- Swiper -->
     <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-<div class="swiper-slide">
-
-    <div class="new-product-item">
-        <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-        <p>Kigili Siyah Erkek Ceket</p>
-        <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-        <p>922 TL</p>
-      <div class="new-product-item-bottom">
-      <button type="button" class="add-basket">Sepete ekle</button>
-      <button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-      
-      </div>     
-</div>     
-</div>
-<div class="swiper-slide">
-
-    <div class="new-product-item">
-        <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-        <p>Kigili Siyah Erkek Ceket</p>
-        <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-        <p>922 TL</p>
-      <div class="new-product-item-bottom">
-      <button type="button" class="add-basket">Sepete ekle</button>
-      <button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-      
-      </div>   
-</div>
-</div>
-<div class="swiper-slide">
-
-    <div class="new-product-item">
-        <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-        <p>Kigili Siyah Erkek Ceket</p>
-        <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-        <p>922 TL</p>
-      <div class="new-product-item-bottom">
-      <button type="button" class="add-basket">Sepete ekle</button>
-      <button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-      
-      </div>   
-</div>
-</div>
-
-<div class="swiper-slide">
-
-    <div class="new-product-item">
-        <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-        <p>Kigili Siyah Erkek Ceket</p>
-        <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-        <p>922 TL</p>
-      <div class="new-product-item-bottom">
-      <button type="button" class="add-basket">Sepete ekle</button>
-      <button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-      
-      </div>   
-</div>
-</div>
-
-<div class="swiper-slide">
-
-    <div class="new-product-item">
-        <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-        <p>Kigili Siyah Erkek Ceket</p>
-        <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-        <p>922 TL</p>
-      <div class="new-product-item-bottom">
-      <button type="button" class="add-basket">Sepete ekle</button>
-      <button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-      
-      </div>   
-</div>
-</div>
-
-<div class="swiper-slide">
-
-    <div class="new-product-item">
-        <img src="https://kigili.akinoncdn.com/products/2020/08/11/114249/d46faf8f-53b0-43be-bbfb-836104faafe5_size390x580_quality100_cropCenter.jpg">
-        <p>Kigili Siyah Erkek Ceket</p>
-        <p><i class="fas fa-star"></i> <span style="color:gray;">(4.2)</span></p>
-        <p>922 TL</p>
-      <div class="new-product-item-bottom">
-      <button type="button" class="add-basket">Sepete ekle</button>
-      <button type="button" class="add-favorite"><i class="fal fa-heart"></i></button>
-      
-      </div>   
-</div>
-</div>
+        <div class="swiper-wrapper"  id="swiper-list">
 
 
 
@@ -411,6 +230,7 @@ href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
 
 
 <!-- PRODUCT SLİDER END -->
+<script src="js/script.js"></script>
 
 </body>
 
